@@ -1,9 +1,9 @@
-const dbName = 'final-backend';
+const dbName = 'employeesystem';
 const dbUser = 'postgres';
-const dbPwd = 'pgpwd';
+const dbPwd = 'password';
 
 module.exports = {
-  dbName,
-  dbUser,
-  dbPwd
+    dbName,
+    dbUser,
+    dbPwd
 };
