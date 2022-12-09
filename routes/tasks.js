@@ -15,4 +15,13 @@ router.get('/:id', ash(async(req, res) => {
     res.status(200).json(task);
 }));
 
+/** EDIT TASK */
+router.put('/:id', ash(async(req, res) => {
+    await Task.update(req.body,
+        { where: {id: req.params.id} }
+    );
+    let task = await Task.findByPk(req.params.id);
+    res.status(201).json(task);
+}));
+
 module.exports = router;
