@@ -15,9 +15,6 @@ const Task = db.define("task", {
     },
     completed: {
         type: DataTypes.STRING,
-    },
-    employee_id: {
-        type: DataTypes.INTEGER,
     }
 });
 
